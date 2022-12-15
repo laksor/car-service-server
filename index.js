@@ -56,7 +56,7 @@ async function run() {
    })
 
     // service api
-    app.get('/service', async (req,res) =>{
+    app.get('https://car-service-sserver.onrender.com/service', async (req,res) =>{
     const query = {};
     const cursor = serviceCollection.find(query);
     const services = await cursor.toArray();
